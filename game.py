@@ -104,7 +104,7 @@ def end_game_message():
     menu()
 
 def menu():
-
+    global word
     print('Seja bem vindo jogador!')
     sleep(1)
     while True:
@@ -144,17 +144,4 @@ def menu():
 
 word = menu()
 
-def play_again():
-    global word
-    while True:
-        play = input('Deseja continuar jogando? [sim/nao]\n'
-            'Resposta: ')
-        if play == 'sim' or 's':
-            word = menu()
-            break
-        elif play == 'nao' or 'n':
-            quit()
-        else:
-            print('Por favor, responda com "sim" ou "nao".')
-        return again
         
